@@ -1,0 +1,371 @@
+{
+ "TYPES": {
+  "RegionBehavior": {
+   "super-fx.senzaEffetti": "Super FX – Senza effetti"
+  },
+  "HINTS": {
+   "RegionBehavior": {
+    "super-fx.senzaEffetti": "Dentro questa regione gli effetti di Super FX non si vedono (tutti, oppure solo quelli scelti). Perfetta per interni, grotte, tende e tettoie."
+   }
+  }
+ },
+ "SUPERFX": {
+  "Comune": {
+   "si": "Sì",
+   "no": "No"
+  },
+  "Esclusione": {
+   "FIELDS": {
+    "tipi": {
+     "label": "Effetti da togliere",
+     "hint": "Scegli quali effetti non si vedono dentro questa regione. Se non ne scegli nessuno, spariscono tutti."
+    }
+   }
+  },
+  "Tipi": {
+   "nebbia": "Nebbia",
+   "pioggia": "Pioggia",
+   "neve": "Neve",
+   "grandine": "Grandine",
+   "sabbia": "Tempesta di sabbia",
+   "foglie": "Foglie al vento",
+   "braci": "Braci",
+   "lucciole": "Lucciole",
+   "liquido": "Liquido in movimento",
+   "tromba": "Tromba d'aria / d'acqua",
+   "fulmini": "Fulmini",
+   "oscurita": "Oscurità magica"
+  },
+  "Descrizioni": {
+   "nebbia": "Nebbia che scorre e si sfilaccia, dalla foschia al muro di nebbia.",
+   "pioggia": "Dalla pioviggine alla tormenta, con schizzi e lampi; anche vista dall'alto.",
+   "neve": "Fiocchi che danzano nel vento, fino alla bufera.",
+   "grandine": "Chicchi che cadono veloci e rimbalzano.",
+   "sabbia": "Granelli spinti dal vento con un velo di polvere.",
+   "foglie": "Foglie che volteggiano girando su sé stesse.",
+   "braci": "Scintille e cenere ardente che salgono: incendi, forge, vulcani.",
+   "lucciole": "Punti di luce che vagano e pulsano: paludi, boschi fatati, spiriti.",
+   "liquido": "Fiumi, torrenti, sangue, lava, acido o energia magica che scorrono.",
+   "tromba": "Vortice visto dall'alto: aria, acqua, fuoco o magia. Si sposta trascinandolo.",
+   "fulmini": "Lampi e saette che cadono a caso, uguali per tutti, con il tuono.",
+   "oscurita": "Un velo d'ombra che respira con lingue scure che si contorcono."
+  },
+  "Livelli": {
+   "generico": {
+    "1": "Lieve",
+    "2": "Moderata",
+    "3": "Media",
+    "4": "Forte",
+    "5": "Estrema"
+   },
+   "pioggia": {
+    "1": "Pioviggine",
+    "2": "Pioggia leggera",
+    "3": "Pioggia",
+    "4": "Acquazzone",
+    "5": "Tormenta"
+   },
+   "neve": {
+    "1": "Qualche fiocco",
+    "2": "Nevicata leggera",
+    "3": "Nevicata",
+    "4": "Nevicata fitta",
+    "5": "Bufera"
+   },
+   "nebbia": {
+    "1": "Foschia",
+    "2": "Nebbia leggera",
+    "3": "Nebbia",
+    "4": "Nebbia fitta",
+    "5": "Muro di nebbia"
+   },
+   "vento": {
+    "1": "Brezza",
+    "2": "Vento",
+    "3": "Vento forte",
+    "4": "Burrasca",
+    "5": "Tempesta"
+   },
+   "tromba": {
+    "1": "Mulinello",
+    "2": "Piccola tromba",
+    "3": "Tromba",
+    "4": "Grande tromba",
+    "5": "Uragano"
+   }
+  },
+  "Liquidi": {
+   "acqua": "Acqua",
+   "palude": "Palude",
+   "sangue": "Sangue",
+   "lava": "Lava",
+   "acido": "Acido",
+   "magia": "Energia magica"
+  },
+  "Specie": {
+   "aria": "D'aria (polvere e detriti)",
+   "acqua": "D'acqua (spruzzi)",
+   "fuoco": "Di fuoco",
+   "magia": "Magica"
+  },
+  "Campi": {
+   "nome": {
+    "nome": "Nome",
+    "hint": "Nome dell'effetto nel pannello. Se lo lasci vuoto si usa il tipo."
+   },
+   "colore": {
+    "nome": "Colore",
+    "hint": "Colore dell'effetto."
+   },
+   "intensita": {
+    "nome": "Intensità",
+    "hint": "Da 1 (lieve) a 5 (estrema): densità, quantità e forza dell'effetto."
+   },
+   "direzione": {
+    "nome": "Direzione",
+    "hint": "Verso dove va il vento o la corrente: 0° = destra, 90° = basso, 180° = sinistra, 270° = alto."
+   },
+   "inclinazione": {
+    "nome": "Inclinazione",
+    "hint": "Quanto il vento piega la caduta. «Dritta dall'alto» = cade verso il pavimento come vista da sopra, con gli schizzi dove tocca terra.",
+    "dallAlto": "Dritta dall'alto"
+   },
+   "velocita": {
+    "nome": "Velocità",
+    "hint": "Da 1 (lenta) a 5 (velocissima)."
+   },
+   "scala": {
+    "nome": "Grandezza",
+    "hint": "Grandezza dei banchi di nebbia o delle onde della corrente."
+   },
+   "frequenza": {
+    "nome": "Frequenza",
+    "hint": "Quanto spesso cadono i fulmini: da 1 (rari) a 5 (continui)."
+   },
+   "vaga": {
+    "nome": "Movimento",
+    "hint": "0 = resta ferma nel punto scelto; da 1 a 5 gira da sola per l'area, sempre più veloce.",
+    "ferma": "Ferma"
+   },
+   "schizzi": {
+    "nome": "Schizzi a terra",
+    "hint": "Gli anelli d'acqua o i rimbalzi dove le gocce toccano terra."
+   },
+   "lampi": {
+    "nome": "Lampi",
+    "hint": "Durante la pioggia cadono anche dei fulmini (più spessi con l'intensità più alta)."
+   },
+   "sottoToken": {
+    "nome": "Sotto i token",
+    "hint": "Il liquido si vede sopra la mappa ma sotto i token: chi guada resta visibile."
+   },
+   "liquido": {
+    "nome": "Liquido",
+    "hint": "Tipo di liquido: imposta il colore e il suo aspetto. Lava, acido e magia brillano e fanno bolle."
+   },
+   "specie": {
+    "nome": "Tipo di tromba",
+    "hint": "D'aria, d'acqua, di fuoco o magica: imposta il colore e i detriti."
+   },
+   "suono": {
+    "nome": "Suono del tuono",
+    "hint": "File audio suonato a tutti poco dopo ogni lampo (vuoto = nessun suono)."
+   },
+   "punto": {
+    "nome": "Centro",
+    "hint": "Clicca sul pulsante e poi sulla mappa; oppure trascina la sua maniglia."
+   },
+   "area": {
+    "nome": "Area",
+    "hint": "Dove si vede l'effetto: tutta la scena oppure dentro le Regioni spuntate. Le regioni «Senza effetti» lo tolgono comunque.",
+    "scena": "Tutta la scena",
+    "nessuna": "Nessuna regione nella scena: disegnane una con gli strumenti delle Regioni per limitare l'effetto."
+   },
+   "sfumatura": {
+    "nome": "Bordo sfumato",
+    "hint": "Quanto è morbido il bordo dell'area e delle zone senza effetti, in caselle."
+   },
+   "soloMaster": {
+    "nome": "Solo per il master",
+    "hint": "Lo vedi solo tu: comodo per prepararlo prima di mostrarlo ai giocatori."
+   },
+   "larghezza": {
+    "nome": "Larghezza",
+    "hint": "Spessore dei raggi, in caselle."
+   },
+   "scintille": {
+    "nome": "Scintille",
+    "hint": "Quante scintille schizzano dallo scontro e dagli impatti (0 = nessuna)."
+   },
+   "alMuro": {
+    "nome": "Contro i muri",
+    "hint": "Se un muro sta fra la fonte e l'arrivo, il raggio si ferma lì oppure lo attraversa.",
+    "ferma": "Si ferma",
+    "attraversa": "Attraversa"
+   },
+   "lunghezzaMax": {
+    "nome": "Lunghezza massima",
+    "hint": "0 = quando una fonte si allontana il raggio si allunga sempre. Un numero = oltre quelle caselle il raggio si interrompe e torna quando le fonti si riavvicinano.",
+    "caselle": "caselle: oltre si interrompe",
+    "sempre": "si allunga sempre"
+   },
+   "pulsazione": {
+    "nome": "Pulsazione",
+    "hint": "0 = luce ferma; da 1 a 5 il bagliore respira sempre più in fretta.",
+    "ferma": "Ferma"
+   },
+   "larghezzaBagliore": {
+    "nome": "Larghezza",
+    "hint": "Quanto si allarga il bagliore attorno al muro, in caselle."
+   },
+   "faville": {
+    "nome": "Faville",
+    "hint": "Scintille che si staccano dalla parete."
+   }
+  },
+  "Schede": {
+   "effetti": "Effetti",
+   "raggi": "Raggi",
+   "muri": "Muri luminosi",
+   "strumenti": "Strumenti"
+  },
+  "Pannello": {
+   "titolo": "Super FX",
+   "pulsante": "Super FX – Pannello degli effetti",
+   "nessunaScena": "Nessuna scena aperta.",
+   "aggiungi": "Aggiungi un effetto",
+   "effettiScena": "Effetti di questa scena",
+   "nessunEffetto": "Nessun effetto. Clicca un pulsante qui sopra per aggiungerne uno: si vede subito sulla mappa.",
+   "tuttiAccesi": "Accendi tutti",
+   "tuttiSpenti": "Spegni tutti",
+   "accendi": "Accendi",
+   "spegni": "Spegni",
+   "su": "Sposta su",
+   "giu": "Sposta giù",
+   "duplica": "Duplica",
+   "elimina": "Elimina",
+   "scegliPunto": "Scegli sulla mappa",
+   "lampoOra": "Fulmine adesso",
+   "sfoglia": "Sfoglia i file"
+  },
+  "Raggi": {
+   "spiega": "Seleziona due o più token e premi «Scontro fra i token selezionati», oppure crea un gruppo e aggiungi token o punti liberi. Senza bersaglio i raggi si scontrano fra loro; con un bersaglio lo colpiscono. Quando un token o una maniglia si spostano, i raggi si allungano o si interrompono subito.",
+   "scontroSelezionati": "Scontro fra i token selezionati",
+   "nuovo": "Nuovo gruppo di raggi",
+   "nessuno": "Nessun gruppo di raggi in questa scena.",
+   "gruppo": "Raggi",
+   "fonti": "Fonti",
+   "nessunaFonte": "Nessuna fonte: aggiungi dei token o dei punti.",
+   "aggiungiToken": "Aggiungi i token selezionati",
+   "aggiungiPunto": "Aggiungi un punto",
+   "bersaglio": "Bersaglio",
+   "nessunBersaglio": "nessuno: i raggi si scontrano",
+   "bersaglioToken": "Token preso di mira",
+   "bersaglioPunto": "Punto sulla mappa",
+   "bersaglioNessuno": "Nessuno (scontro)",
+   "punto": "Punto",
+   "tokenSparito": "token non più nella scena"
+  },
+  "Muri": {
+   "spiega": "Scegli l'aspetto del bagliore, poi seleziona i muri dal livello Muri (Maiusc + clic per sceglierne più di uno) e premi «Applica».",
+   "stato": "Muri luminosi nella scena: {luminosi}. Muri selezionati: {sel}.",
+   "applica": "Applica ai muri selezionati",
+   "togli": "Togli dai selezionati",
+   "leggi": "Copia dal muro selezionato",
+   "seleziona": "Seleziona i muri luminosi",
+   "togliTutti": "Togli tutti i bagliori"
+  },
+  "Strumenti": {
+   "zone": "Zone senza effetti",
+   "zoneSpiega": "Gli effetti si tolgono dalle Regioni con il comportamento «Super FX – Senza effetti». «Maschera dai muri» trova da sola stanze, edifici e grotte chiuse dai muri e crea la regione «Super FX – Interni». Puoi anche disegnare tu le regioni e aggiungere il comportamento a quelle selezionate.",
+   "mascheraMuri": "Maschera dai muri",
+   "esclusione": "«Senza effetti» sulle regioni selezionate",
+   "nomeInterni": "Super FX – Interni",
+   "maniglie": "Maniglie sulla mappa",
+   "maniglieSpiega": "I punti liberi dei raggi e il centro delle trombe hanno una maniglia rotonda che vedi solo tu: trascinala per spostarli (Maiusc = al centro della casella).",
+   "mostraManiglie": "Mostra le maniglie",
+   "nascondiManiglie": "Nascondi le maniglie",
+   "preset": "Combinazioni pronte",
+   "presetSpiega": "Aggiungono alla scena più effetti già regolati insieme. Poi li cambi come vuoi.",
+   "atmosfera": "Atmosfera cinematografica",
+   "atmosferaSpiega": "Colori un po' spenti, ombre più profonde e un buio freddo, con il ciclo giorno/notte attivo. «Ripristina» rimette i valori di prima.",
+   "applicaAtmosfera": "Applica alla scena",
+   "ripristina": "Ripristina",
+   "copia": "Copia gli effetti su un'altra scena",
+   "copiaPulsante": "Copia",
+   "svuota": "Togli tutto da questa scena",
+   "svuotaPulsante": "Togli effetti e raggi"
+  },
+  "Preset": {
+   "temporale": "Temporale",
+   "pioggia": "Pioggia",
+   "dallAlto": "Pioggia dall'alto",
+   "nevicata": "Nevicata",
+   "bufera": "Bufera di neve",
+   "grandinata": "Grandinata",
+   "sabbia": "Tempesta di sabbia",
+   "palude": "Palude nebbiosa",
+   "autunno": "Bosco d'autunno",
+   "incendio": "Incendio",
+   "cripta": "Cripta maledetta",
+   "magia": "Tempesta magica",
+   "vulcano": "Vulcano"
+  },
+  "Domande": {
+   "eliminaEffetto": "Eliminare l'effetto «{nome}»?",
+   "eliminaGruppo": "Eliminare il gruppo di raggi «{nome}»?",
+   "togliBagliori": "Togliere il bagliore da {n} muri?",
+   "svuota": "Togliere tutti gli effetti e tutti i raggi dalla scena «{nome}»? I muri luminosi restano."
+  },
+  "Avvisi": {
+   "soloMaster": "Solo il master può usare il pannello di Super FX.",
+   "cliccaMappa": "Clicca sulla mappa per scegliere il punto (Esc o tasto destro per annullare).",
+   "scenaTroppoGrande": "La scena è troppo grande per la maschera automatica: disegna le regioni a mano.",
+   "nessunInterno": "Non ho trovato spazi chiusi dai muri in questa scena.",
+   "selezionaRegioni": "Seleziona prima una o più regioni (livello Regioni).",
+   "esclusioniAggiunte": "Comportamento «Senza effetti» aggiunto a {n} regioni.",
+   "liquidoArea": "Consiglio: disegna una Regione lungo il fiume, selezionala e aggiungi il liquido; oppure scegli l'area nel riquadro dell'effetto.",
+   "dueToken": "Seleziona almeno due token (o seleziona un token e prendine di mira un altro con T).",
+   "selezionaToken": "Seleziona prima uno o più token.",
+   "prendiDiMira": "Prendi di mira un token (tasto T) e riprova.",
+   "selezionaMuri": "Seleziona prima uno o più muri (livello Muri).",
+   "nessunMuroLuminoso": "Nessuno dei muri selezionati ha un bagliore.",
+   "baglioreApplicato": "Bagliore applicato a {n} muri.",
+   "presetAggiunto": "Aggiunto: {nome}.",
+   "atmosferaApplicata": "Atmosfera cinematografica applicata.",
+   "atmosferaRipristinata": "Atmosfera di prima ripristinata.",
+   "nienteDaRipristinare": "Non c'è un'atmosfera precedente da ripristinare.",
+   "effettiCopiati": "{n} effetti copiati su «{scena}»."
+  },
+  "Impostazioni": {
+   "lingua": {
+    "nome": "Lingua di Super FX",
+    "hint": "Lingua dei testi di Super FX. «Automatica» segue la lingua di Foundry.",
+    "auto": "Automatica"
+   },
+   "attivo": {
+    "nome": "Mostra gli effetti",
+    "hint": "Spegni per non vedere gli effetti su questo computer (gli altri li vedono comunque)."
+   },
+   "qualita": {
+    "nome": "Qualità degli effetti",
+    "hint": "Quante particelle disegnare. Abbassala se il computer rallenta.",
+    "alta": "Alta",
+    "media": "Media",
+    "bassa": "Bassa"
+   },
+   "maniglie": {
+    "nome": "Maniglie sulla mappa",
+    "hint": "Solo per il master: mostra le maniglie dei punti dei raggi e delle trombe."
+   },
+   "tastoPannello": {
+    "nome": "Apri il pannello di Super FX",
+    "hint": "Apre il pannello degli effetti (solo master)."
+   },
+   "tastoAccendi": {
+    "nome": "Accendi / spegni gli effetti",
+    "hint": "Solo su questo computer."
+   }
+  }
+ }
+}

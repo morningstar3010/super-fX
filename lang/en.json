@@ -1,0 +1,371 @@
+{
+ "TYPES": {
+  "RegionBehavior": {
+   "super-fx.senzaEffetti": "Super FX – No effects"
+  },
+  "HINTS": {
+   "RegionBehavior": {
+    "super-fx.senzaEffetti": "Super FX effects are not shown inside this region (all of them, or only the chosen ones). Perfect for interiors, caves, tents and roofs."
+   }
+  }
+ },
+ "SUPERFX": {
+  "Comune": {
+   "si": "Yes",
+   "no": "No"
+  },
+  "Esclusione": {
+   "FIELDS": {
+    "tipi": {
+     "label": "Effects to remove",
+     "hint": "Choose which effects are hidden inside this region. If you choose none, all of them disappear."
+    }
+   }
+  },
+  "Tipi": {
+   "nebbia": "Fog",
+   "pioggia": "Rain",
+   "neve": "Snow",
+   "grandine": "Hail",
+   "sabbia": "Sandstorm",
+   "foglie": "Windblown leaves",
+   "braci": "Embers",
+   "lucciole": "Fireflies",
+   "liquido": "Flowing liquid",
+   "tromba": "Tornado / waterspout",
+   "fulmini": "Lightning",
+   "oscurita": "Magical darkness"
+  },
+  "Descrizioni": {
+   "nebbia": "Drifting, fraying fog, from light haze to a wall of fog.",
+   "pioggia": "From drizzle to storm, with splashes and lightning; also seen from above.",
+   "neve": "Flakes dancing in the wind, up to a blizzard.",
+   "grandine": "Hailstones falling fast and bouncing.",
+   "sabbia": "Wind-driven grains with a veil of dust.",
+   "foglie": "Leaves fluttering and spinning.",
+   "braci": "Rising sparks and glowing ash: fires, forges, volcanoes.",
+   "lucciole": "Wandering, pulsing lights: swamps, fey woods, spirits.",
+   "liquido": "Rivers, streams, blood, lava, acid or magical energy flowing.",
+   "tromba": "Vortex seen from above: air, water, fire or magic. Drag it to move it.",
+   "fulmini": "Random flashes and bolts, the same for everyone, with thunder.",
+   "oscurita": "A breathing veil of shadow with writhing dark tendrils."
+  },
+  "Livelli": {
+   "generico": {
+    "1": "Faint",
+    "2": "Moderate",
+    "3": "Medium",
+    "4": "Strong",
+    "5": "Extreme"
+   },
+   "pioggia": {
+    "1": "Drizzle",
+    "2": "Light rain",
+    "3": "Rain",
+    "4": "Downpour",
+    "5": "Storm"
+   },
+   "neve": {
+    "1": "A few flakes",
+    "2": "Light snow",
+    "3": "Snowfall",
+    "4": "Heavy snow",
+    "5": "Blizzard"
+   },
+   "nebbia": {
+    "1": "Haze",
+    "2": "Light fog",
+    "3": "Fog",
+    "4": "Thick fog",
+    "5": "Wall of fog"
+   },
+   "vento": {
+    "1": "Breeze",
+    "2": "Wind",
+    "3": "Strong wind",
+    "4": "Gale",
+    "5": "Tempest"
+   },
+   "tromba": {
+    "1": "Whirl",
+    "2": "Small twister",
+    "3": "Twister",
+    "4": "Large twister",
+    "5": "Hurricane"
+   }
+  },
+  "Liquidi": {
+   "acqua": "Water",
+   "palude": "Swamp",
+   "sangue": "Blood",
+   "lava": "Lava",
+   "acido": "Acid",
+   "magia": "Magical energy"
+  },
+  "Specie": {
+   "aria": "Air (dust and debris)",
+   "acqua": "Water (spray)",
+   "fuoco": "Fire",
+   "magia": "Magical"
+  },
+  "Campi": {
+   "nome": {
+    "nome": "Name",
+    "hint": "Name of the effect in the panel. If empty, the type is used."
+   },
+   "colore": {
+    "nome": "Colour",
+    "hint": "Colour of the effect."
+   },
+   "intensita": {
+    "nome": "Intensity",
+    "hint": "From 1 (faint) to 5 (extreme): density, amount and strength of the effect."
+   },
+   "direzione": {
+    "nome": "Direction",
+    "hint": "Where the wind or current goes: 0° = right, 90° = down, 180° = left, 270° = up."
+   },
+   "inclinazione": {
+    "nome": "Slant",
+    "hint": "How much the wind bends the fall. «Straight from above» = falls towards the floor as seen from above, splashing where it lands.",
+    "dallAlto": "Straight from above"
+   },
+   "velocita": {
+    "nome": "Speed",
+    "hint": "From 1 (slow) to 5 (very fast)."
+   },
+   "scala": {
+    "nome": "Size",
+    "hint": "Size of the fog banks or of the current's ripples."
+   },
+   "frequenza": {
+    "nome": "Frequency",
+    "hint": "How often lightning strikes: from 1 (rare) to 5 (constant)."
+   },
+   "vaga": {
+    "nome": "Movement",
+    "hint": "0 = stays at the chosen point; 1 to 5 = roams the area on its own, faster and faster.",
+    "ferma": "Still"
+   },
+   "schizzi": {
+    "nome": "Splashes",
+    "hint": "Water rings or bounces where the drops hit the ground."
+   },
+   "lampi": {
+    "nome": "Lightning",
+    "hint": "Lightning also strikes during the rain (more often at higher intensity)."
+   },
+   "sottoToken": {
+    "nome": "Below tokens",
+    "hint": "The liquid is drawn above the map but below tokens: whoever wades stays visible."
+   },
+   "liquido": {
+    "nome": "Liquid",
+    "hint": "Kind of liquid: sets the colour and look. Lava, acid and magic glow and bubble."
+   },
+   "specie": {
+    "nome": "Vortex type",
+    "hint": "Air, water, fire or magic: sets the colour and the debris."
+   },
+   "suono": {
+    "nome": "Thunder sound",
+    "hint": "Audio file played to everyone shortly after each flash (empty = no sound)."
+   },
+   "punto": {
+    "nome": "Centre",
+    "hint": "Click the button and then the map; or drag its handle."
+   },
+   "area": {
+    "nome": "Area",
+    "hint": "Where the effect is shown: the whole scene or inside the ticked Regions. «No effects» regions remove it anyway.",
+    "scena": "Whole scene",
+    "nessuna": "No regions in the scene: draw one with the Region tools to limit the effect."
+   },
+   "sfumatura": {
+    "nome": "Soft edge",
+    "hint": "How soft the edge of the area and of the no-effect zones is, in grid squares."
+   },
+   "soloMaster": {
+    "nome": "GM only",
+    "hint": "Only you see it: handy to prepare it before showing it to the players."
+   },
+   "larghezza": {
+    "nome": "Width",
+    "hint": "Thickness of the beams, in grid squares."
+   },
+   "scintille": {
+    "nome": "Sparks",
+    "hint": "How many sparks fly from the clash and impacts (0 = none)."
+   },
+   "alMuro": {
+    "nome": "Against walls",
+    "hint": "If a wall stands between the source and the end, the beam stops there or passes through.",
+    "ferma": "Stops",
+    "attraversa": "Passes through"
+   },
+   "lunghezzaMax": {
+    "nome": "Maximum length",
+    "hint": "0 = when a source moves away the beam always stretches. A number = beyond that many squares the beam breaks, and comes back when the sources get closer.",
+    "caselle": "squares: breaks beyond",
+    "sempre": "always stretches"
+   },
+   "pulsazione": {
+    "nome": "Pulse",
+    "hint": "0 = steady light; 1 to 5 = the glow breathes faster and faster.",
+    "ferma": "Steady"
+   },
+   "larghezzaBagliore": {
+    "nome": "Width",
+    "hint": "How far the glow spreads around the wall, in grid squares."
+   },
+   "faville": {
+    "nome": "Sparks",
+    "hint": "Sparks coming off the wall."
+   }
+  },
+  "Schede": {
+   "effetti": "Effects",
+   "raggi": "Beams",
+   "muri": "Glowing walls",
+   "strumenti": "Tools"
+  },
+  "Pannello": {
+   "titolo": "Super FX",
+   "pulsante": "Super FX – Effects panel",
+   "nessunaScena": "No scene is open.",
+   "aggiungi": "Add an effect",
+   "effettiScena": "Effects of this scene",
+   "nessunEffetto": "No effects. Click a button above to add one: it shows up on the map right away.",
+   "tuttiAccesi": "Turn all on",
+   "tuttiSpenti": "Turn all off",
+   "accendi": "Turn on",
+   "spegni": "Turn off",
+   "su": "Move up",
+   "giu": "Move down",
+   "duplica": "Duplicate",
+   "elimina": "Delete",
+   "scegliPunto": "Pick on the map",
+   "lampoOra": "Lightning now",
+   "sfoglia": "Browse files"
+  },
+  "Raggi": {
+   "spiega": "Select two or more tokens and press «Clash between selected tokens», or create a group and add tokens or free points. Without a target the beams clash with each other; with a target they hit it. When a token or a handle moves, the beams stretch or break at once.",
+   "scontroSelezionati": "Clash between selected tokens",
+   "nuovo": "New beam group",
+   "nessuno": "No beam groups in this scene.",
+   "gruppo": "Beams",
+   "fonti": "Sources",
+   "nessunaFonte": "No sources: add tokens or points.",
+   "aggiungiToken": "Add selected tokens",
+   "aggiungiPunto": "Add a point",
+   "bersaglio": "Target",
+   "nessunBersaglio": "none: the beams clash",
+   "bersaglioToken": "Targeted token",
+   "bersaglioPunto": "Point on the map",
+   "bersaglioNessuno": "None (clash)",
+   "punto": "Point",
+   "tokenSparito": "token no longer in the scene"
+  },
+  "Muri": {
+   "spiega": "Choose the look of the glow, then select the walls on the Walls layer (Shift + click to pick more than one) and press «Apply».",
+   "stato": "Glowing walls in the scene: {luminosi}. Selected walls: {sel}.",
+   "applica": "Apply to selected walls",
+   "togli": "Remove from selected",
+   "leggi": "Copy from selected wall",
+   "seleziona": "Select glowing walls",
+   "togliTutti": "Remove all glows"
+  },
+  "Strumenti": {
+   "zone": "No-effect zones",
+   "zoneSpiega": "Effects are removed by Regions with the «Super FX – No effects» behaviour. «Mask from walls» finds rooms, buildings and caves closed by walls by itself and creates the «Super FX – Interiors» region. You can also draw the regions yourself and add the behaviour to the selected ones.",
+   "mascheraMuri": "Mask from walls",
+   "esclusione": "«No effects» on selected regions",
+   "nomeInterni": "Super FX – Interiors",
+   "maniglie": "Handles on the map",
+   "maniglieSpiega": "Free beam points and tornado centres have a round handle only you can see: drag it to move them (Shift = snap to the square's centre).",
+   "mostraManiglie": "Show handles",
+   "nascondiManiglie": "Hide handles",
+   "preset": "Ready-made combinations",
+   "presetSpiega": "They add several effects already tuned together to the scene. Then change them as you like.",
+   "atmosfera": "Cinematic atmosphere",
+   "atmosferaSpiega": "Slightly muted colours, deeper shadows and a cold darkness, with the day/night cycle on. «Restore» puts back the previous values.",
+   "applicaAtmosfera": "Apply to the scene",
+   "ripristina": "Restore",
+   "copia": "Copy effects to another scene",
+   "copiaPulsante": "Copy",
+   "svuota": "Clear this scene",
+   "svuotaPulsante": "Remove effects and beams"
+  },
+  "Preset": {
+   "temporale": "Thunderstorm",
+   "pioggia": "Rain",
+   "dallAlto": "Rain from above",
+   "nevicata": "Snowfall",
+   "bufera": "Blizzard",
+   "grandinata": "Hailstorm",
+   "sabbia": "Sandstorm",
+   "palude": "Misty swamp",
+   "autunno": "Autumn wood",
+   "incendio": "Fire",
+   "cripta": "Cursed crypt",
+   "magia": "Arcane storm",
+   "vulcano": "Volcano"
+  },
+  "Domande": {
+   "eliminaEffetto": "Delete the effect «{nome}»?",
+   "eliminaGruppo": "Delete the beam group «{nome}»?",
+   "togliBagliori": "Remove the glow from {n} walls?",
+   "svuota": "Remove all effects and beams from the scene «{nome}»? Glowing walls stay."
+  },
+  "Avvisi": {
+   "soloMaster": "Only the GM can use the Super FX panel.",
+   "cliccaMappa": "Click on the map to pick the point (Esc or right click to cancel).",
+   "scenaTroppoGrande": "The scene is too large for the automatic mask: draw the regions by hand.",
+   "nessunInterno": "No spaces enclosed by walls were found in this scene.",
+   "selezionaRegioni": "Select one or more regions first (Regions layer).",
+   "esclusioniAggiunte": "«No effects» behaviour added to {n} regions.",
+   "liquidoArea": "Tip: draw a Region along the river, select it and add the liquid; or choose the area in the effect's box.",
+   "dueToken": "Select at least two tokens (or select one token and target another with T).",
+   "selezionaToken": "Select one or more tokens first.",
+   "prendiDiMira": "Target a token (T key) and try again.",
+   "selezionaMuri": "Select one or more walls first (Walls layer).",
+   "nessunMuroLuminoso": "None of the selected walls has a glow.",
+   "baglioreApplicato": "Glow applied to {n} walls.",
+   "presetAggiunto": "Added: {nome}.",
+   "atmosferaApplicata": "Cinematic atmosphere applied.",
+   "atmosferaRipristinata": "Previous atmosphere restored.",
+   "nienteDaRipristinare": "There is no previous atmosphere to restore.",
+   "effettiCopiati": "{n} effects copied to «{scena}»."
+  },
+  "Impostazioni": {
+   "lingua": {
+    "nome": "Super FX language",
+    "hint": "Language of the Super FX texts. «Automatic» follows Foundry's language.",
+    "auto": "Automatic"
+   },
+   "attivo": {
+    "nome": "Show effects",
+    "hint": "Turn off to hide the effects on this computer (the others still see them)."
+   },
+   "qualita": {
+    "nome": "Effects quality",
+    "hint": "How many particles to draw. Lower it if your computer slows down.",
+    "alta": "High",
+    "media": "Medium",
+    "bassa": "Low"
+   },
+   "maniglie": {
+    "nome": "Handles on the map",
+    "hint": "GM only: shows the handles of beam points and tornadoes."
+   },
+   "tastoPannello": {
+    "nome": "Open the Super FX panel",
+    "hint": "Opens the effects panel (GM only)."
+   },
+   "tastoAccendi": {
+    "nome": "Turn effects on / off",
+    "hint": "On this computer only."
+   }
+  }
+ }
+}

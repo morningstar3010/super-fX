@@ -1,0 +1,371 @@
+{
+ "TYPES": {
+  "RegionBehavior": {
+   "super-fx.senzaEffetti": "Super FX – Keine Effekte"
+  },
+  "HINTS": {
+   "RegionBehavior": {
+    "super-fx.senzaEffetti": "In dieser Region werden die Effekte von Super FX nicht angezeigt (alle oder nur die gewählten). Ideal für Innenräume, Höhlen, Zelte und Dächer."
+   }
+  }
+ },
+ "SUPERFX": {
+  "Comune": {
+   "si": "Ja",
+   "no": "Nein"
+  },
+  "Esclusione": {
+   "FIELDS": {
+    "tipi": {
+     "label": "Zu entfernende Effekte",
+     "hint": "Wähle, welche Effekte in dieser Region nicht zu sehen sind. Wählst du keinen, verschwinden alle."
+    }
+   }
+  },
+  "Tipi": {
+   "nebbia": "Nebel",
+   "pioggia": "Regen",
+   "neve": "Schnee",
+   "grandine": "Hagel",
+   "sabbia": "Sandsturm",
+   "foglie": "Blätter im Wind",
+   "braci": "Glut",
+   "lucciole": "Glühwürmchen",
+   "liquido": "Fließende Flüssigkeit",
+   "tromba": "Windhose / Wasserhose",
+   "fulmini": "Blitze",
+   "oscurita": "Magische Dunkelheit"
+  },
+  "Descrizioni": {
+   "nebbia": "Ziehender, zerfasernder Nebel, vom Dunst bis zur Nebelwand.",
+   "pioggia": "Vom Nieselregen bis zum Unwetter, mit Spritzern und Blitzen; auch von oben gesehen.",
+   "neve": "Flocken, die im Wind tanzen, bis zum Schneesturm.",
+   "grandine": "Hagelkörner, die schnell fallen und abprallen.",
+   "sabbia": "Vom Wind getriebene Körner mit einem Staubschleier.",
+   "foglie": "Blätter, die flattern und sich drehen.",
+   "braci": "Aufsteigende Funken und glühende Asche: Brände, Schmieden, Vulkane.",
+   "lucciole": "Umherwandernde, pulsierende Lichter: Sümpfe, Feenwälder, Geister.",
+   "liquido": "Flüsse, Bäche, Blut, Lava, Säure oder magische Energie, die fließen.",
+   "tromba": "Wirbel von oben gesehen: Luft, Wasser, Feuer oder Magie. Zum Verschieben ziehen.",
+   "fulmini": "Zufällige Blitze und Einschläge, für alle gleich, mit Donner.",
+   "oscurita": "Ein atmender Schattenschleier mit sich windenden dunklen Ranken."
+  },
+  "Livelli": {
+   "generico": {
+    "1": "Schwach",
+    "2": "Mäßig",
+    "3": "Mittel",
+    "4": "Stark",
+    "5": "Extrem"
+   },
+   "pioggia": {
+    "1": "Nieselregen",
+    "2": "Leichter Regen",
+    "3": "Regen",
+    "4": "Platzregen",
+    "5": "Unwetter"
+   },
+   "neve": {
+    "1": "Ein paar Flocken",
+    "2": "Leichter Schneefall",
+    "3": "Schneefall",
+    "4": "Dichter Schneefall",
+    "5": "Schneesturm"
+   },
+   "nebbia": {
+    "1": "Dunst",
+    "2": "Leichter Nebel",
+    "3": "Nebel",
+    "4": "Dichter Nebel",
+    "5": "Nebelwand"
+   },
+   "vento": {
+    "1": "Brise",
+    "2": "Wind",
+    "3": "Starker Wind",
+    "4": "Sturm",
+    "5": "Orkan"
+   },
+   "tromba": {
+    "1": "Wirbel",
+    "2": "Kleine Windhose",
+    "3": "Windhose",
+    "4": "Große Windhose",
+    "5": "Hurrikan"
+   }
+  },
+  "Liquidi": {
+   "acqua": "Wasser",
+   "palude": "Sumpf",
+   "sangue": "Blut",
+   "lava": "Lava",
+   "acido": "Säure",
+   "magia": "Magische Energie"
+  },
+  "Specie": {
+   "aria": "Luft (Staub und Trümmer)",
+   "acqua": "Wasser (Gischt)",
+   "fuoco": "Feuer",
+   "magia": "Magisch"
+  },
+  "Campi": {
+   "nome": {
+    "nome": "Name",
+    "hint": "Name des Effekts im Panel. Bleibt er leer, wird der Typ verwendet."
+   },
+   "colore": {
+    "nome": "Farbe",
+    "hint": "Farbe des Effekts."
+   },
+   "intensita": {
+    "nome": "Intensität",
+    "hint": "Von 1 (schwach) bis 5 (extrem): Dichte, Menge und Stärke des Effekts."
+   },
+   "direzione": {
+    "nome": "Richtung",
+    "hint": "Wohin der Wind oder die Strömung geht: 0° = rechts, 90° = unten, 180° = links, 270° = oben."
+   },
+   "inclinazione": {
+    "nome": "Neigung",
+    "hint": "Wie stark der Wind den Fall neigt. «Senkrecht von oben» = fällt von oben gesehen auf den Boden und spritzt dort, wo er aufkommt.",
+    "dallAlto": "Senkrecht von oben"
+   },
+   "velocita": {
+    "nome": "Geschwindigkeit",
+    "hint": "Von 1 (langsam) bis 5 (sehr schnell)."
+   },
+   "scala": {
+    "nome": "Größe",
+    "hint": "Größe der Nebelbänke oder der Wellen der Strömung."
+   },
+   "frequenza": {
+    "nome": "Häufigkeit",
+    "hint": "Wie oft Blitze einschlagen: von 1 (selten) bis 5 (ständig)."
+   },
+   "vaga": {
+    "nome": "Bewegung",
+    "hint": "0 = bleibt am gewählten Punkt; 1 bis 5 = zieht allein durch das Gebiet, immer schneller.",
+    "ferma": "Still"
+   },
+   "schizzi": {
+    "nome": "Spritzer am Boden",
+    "hint": "Wasserringe oder Abpraller, wo die Tropfen auf den Boden treffen."
+   },
+   "lampi": {
+    "nome": "Blitze",
+    "hint": "Während des Regens schlagen auch Blitze ein (häufiger bei höherer Intensität)."
+   },
+   "sottoToken": {
+    "nome": "Unter den Tokens",
+    "hint": "Die Flüssigkeit liegt über der Karte, aber unter den Tokens: wer watet, bleibt sichtbar."
+   },
+   "liquido": {
+    "nome": "Flüssigkeit",
+    "hint": "Art der Flüssigkeit: legt Farbe und Aussehen fest. Lava, Säure und Magie leuchten und blubbern."
+   },
+   "specie": {
+    "nome": "Art des Wirbels",
+    "hint": "Luft, Wasser, Feuer oder Magie: legt Farbe und Trümmer fest."
+   },
+   "suono": {
+    "nome": "Donnergeräusch",
+    "hint": "Audiodatei, die allen kurz nach jedem Blitz abgespielt wird (leer = kein Ton)."
+   },
+   "punto": {
+    "nome": "Mitte",
+    "hint": "Klicke auf die Schaltfläche und dann auf die Karte; oder ziehe den Griff."
+   },
+   "area": {
+    "nome": "Bereich",
+    "hint": "Wo der Effekt zu sehen ist: ganze Szene oder in den angehakten Regionen. Regionen «Keine Effekte» entfernen ihn trotzdem.",
+    "scena": "Ganze Szene",
+    "nessuna": "Keine Regionen in der Szene: zeichne eine mit den Regionswerkzeugen, um den Effekt zu begrenzen."
+   },
+   "sfumatura": {
+    "nome": "Weicher Rand",
+    "hint": "Wie weich der Rand des Bereichs und der effektfreien Zonen ist, in Feldern."
+   },
+   "soloMaster": {
+    "nome": "Nur für die SL",
+    "hint": "Nur du siehst ihn: praktisch, um ihn vorzubereiten, bevor die Spieler ihn sehen."
+   },
+   "larghezza": {
+    "nome": "Breite",
+    "hint": "Dicke der Strahlen, in Feldern."
+   },
+   "scintille": {
+    "nome": "Funken",
+    "hint": "Wie viele Funken vom Zusammenprall und den Einschlägen sprühen (0 = keine)."
+   },
+   "alMuro": {
+    "nome": "An Wänden",
+    "hint": "Steht eine Wand zwischen Quelle und Ziel, endet der Strahl dort oder geht hindurch.",
+    "ferma": "Endet",
+    "attraversa": "Geht hindurch"
+   },
+   "lunghezzaMax": {
+    "nome": "Maximale Länge",
+    "hint": "0 = entfernt sich eine Quelle, wird der Strahl immer länger. Eine Zahl = über so viele Felder hinaus reißt der Strahl ab und kehrt zurück, wenn die Quellen näher kommen.",
+    "caselle": "Felder: darüber reißt er ab",
+    "sempre": "wird immer länger"
+   },
+   "pulsazione": {
+    "nome": "Pulsieren",
+    "hint": "0 = ruhiges Licht; 1 bis 5 = das Leuchten atmet immer schneller.",
+    "ferma": "Ruhig"
+   },
+   "larghezzaBagliore": {
+    "nome": "Breite",
+    "hint": "Wie weit sich das Leuchten um die Wand ausbreitet, in Feldern."
+   },
+   "faville": {
+    "nome": "Funken",
+    "hint": "Funken, die sich von der Wand lösen."
+   }
+  },
+  "Schede": {
+   "effetti": "Effekte",
+   "raggi": "Strahlen",
+   "muri": "Leuchtende Wände",
+   "strumenti": "Werkzeuge"
+  },
+  "Pannello": {
+   "titolo": "Super FX",
+   "pulsante": "Super FX – Effekt-Panel",
+   "nessunaScena": "Keine Szene geöffnet.",
+   "aggiungi": "Effekt hinzufügen",
+   "effettiScena": "Effekte dieser Szene",
+   "nessunEffetto": "Keine Effekte. Klicke oben auf eine Schaltfläche, um einen hinzuzufügen: er erscheint sofort auf der Karte.",
+   "tuttiAccesi": "Alle einschalten",
+   "tuttiSpenti": "Alle ausschalten",
+   "accendi": "Einschalten",
+   "spegni": "Ausschalten",
+   "su": "Nach oben",
+   "giu": "Nach unten",
+   "duplica": "Duplizieren",
+   "elimina": "Löschen",
+   "scegliPunto": "Auf der Karte wählen",
+   "lampoOra": "Blitz jetzt",
+   "sfoglia": "Dateien durchsuchen"
+  },
+  "Raggi": {
+   "spiega": "Wähle zwei oder mehr Tokens und drücke «Zusammenprall zwischen gewählten Tokens», oder erstelle eine Gruppe und füge Tokens oder freie Punkte hinzu. Ohne Ziel prallen die Strahlen aufeinander; mit Ziel treffen sie es. Bewegt sich ein Token oder ein Griff, werden die Strahlen sofort länger oder reißen ab.",
+   "scontroSelezionati": "Zusammenprall zwischen gewählten Tokens",
+   "nuovo": "Neue Strahlengruppe",
+   "nessuno": "Keine Strahlengruppen in dieser Szene.",
+   "gruppo": "Strahlen",
+   "fonti": "Quellen",
+   "nessunaFonte": "Keine Quellen: füge Tokens oder Punkte hinzu.",
+   "aggiungiToken": "Gewählte Tokens hinzufügen",
+   "aggiungiPunto": "Punkt hinzufügen",
+   "bersaglio": "Ziel",
+   "nessunBersaglio": "keines: die Strahlen prallen aufeinander",
+   "bersaglioToken": "Anvisierter Token",
+   "bersaglioPunto": "Punkt auf der Karte",
+   "bersaglioNessuno": "Keines (Zusammenprall)",
+   "punto": "Punkt",
+   "tokenSparito": "Token nicht mehr in der Szene"
+  },
+  "Muri": {
+   "spiega": "Wähle das Aussehen des Leuchtens, markiere dann die Wände auf der Wandebene (Umschalt + Klick für mehrere) und drücke «Anwenden».",
+   "stato": "Leuchtende Wände in der Szene: {luminosi}. Gewählte Wände: {sel}.",
+   "applica": "Auf gewählte Wände anwenden",
+   "togli": "Von gewählten entfernen",
+   "leggi": "Von gewählter Wand übernehmen",
+   "seleziona": "Leuchtende Wände auswählen",
+   "togliTutti": "Alle Leuchteffekte entfernen"
+  },
+  "Strumenti": {
+   "zone": "Effektfreie Zonen",
+   "zoneSpiega": "Effekte werden durch Regionen mit dem Verhalten «Super FX – Keine Effekte» entfernt. «Maske aus Wänden» findet selbst Räume, Gebäude und Höhlen, die von Wänden umschlossen sind, und erstellt die Region «Super FX – Innenräume». Du kannst die Regionen auch selbst zeichnen und den gewählten das Verhalten hinzufügen.",
+   "mascheraMuri": "Maske aus Wänden",
+   "esclusione": "«Keine Effekte» auf gewählte Regionen",
+   "nomeInterni": "Super FX – Innenräume",
+   "maniglie": "Griffe auf der Karte",
+   "maniglieSpiega": "Freie Strahlenpunkte und die Mitte von Windhosen haben einen runden Griff, den nur du siehst: ziehe ihn, um sie zu verschieben (Umschalt = zur Feldmitte).",
+   "mostraManiglie": "Griffe anzeigen",
+   "nascondiManiglie": "Griffe ausblenden",
+   "preset": "Fertige Kombinationen",
+   "presetSpiega": "Fügen der Szene mehrere aufeinander abgestimmte Effekte hinzu. Danach kannst du sie beliebig ändern.",
+   "atmosfera": "Filmische Atmosphäre",
+   "atmosferaSpiega": "Etwas gedämpfte Farben, tiefere Schatten und eine kalte Dunkelheit, mit aktivem Tag-/Nachtzyklus. «Wiederherstellen» setzt die vorherigen Werte zurück.",
+   "applicaAtmosfera": "Auf die Szene anwenden",
+   "ripristina": "Wiederherstellen",
+   "copia": "Effekte in eine andere Szene kopieren",
+   "copiaPulsante": "Kopieren",
+   "svuota": "Diese Szene leeren",
+   "svuotaPulsante": "Effekte und Strahlen entfernen"
+  },
+  "Preset": {
+   "temporale": "Gewitter",
+   "pioggia": "Regen",
+   "dallAlto": "Regen von oben",
+   "nevicata": "Schneefall",
+   "bufera": "Schneesturm",
+   "grandinata": "Hagelsturm",
+   "sabbia": "Sandsturm",
+   "palude": "Nebliger Sumpf",
+   "autunno": "Herbstwald",
+   "incendio": "Brand",
+   "cripta": "Verfluchte Gruft",
+   "magia": "Magischer Sturm",
+   "vulcano": "Vulkan"
+  },
+  "Domande": {
+   "eliminaEffetto": "Den Effekt «{nome}» löschen?",
+   "eliminaGruppo": "Die Strahlengruppe «{nome}» löschen?",
+   "togliBagliori": "Das Leuchten von {n} Wänden entfernen?",
+   "svuota": "Alle Effekte und Strahlen aus der Szene «{nome}» entfernen? Leuchtende Wände bleiben."
+  },
+  "Avvisi": {
+   "soloMaster": "Nur die SL kann das Super-FX-Panel benutzen.",
+   "cliccaMappa": "Klicke auf die Karte, um den Punkt zu wählen (Esc oder Rechtsklick zum Abbrechen).",
+   "scenaTroppoGrande": "Die Szene ist zu groß für die automatische Maske: zeichne die Regionen von Hand.",
+   "nessunInterno": "In dieser Szene wurden keine von Wänden umschlossenen Räume gefunden.",
+   "selezionaRegioni": "Wähle zuerst eine oder mehrere Regionen (Regionsebene).",
+   "esclusioniAggiunte": "Verhalten «Keine Effekte» zu {n} Regionen hinzugefügt.",
+   "liquidoArea": "Tipp: Zeichne eine Region entlang des Flusses, wähle sie aus und füge die Flüssigkeit hinzu; oder wähle den Bereich im Feld des Effekts.",
+   "dueToken": "Wähle mindestens zwei Tokens (oder wähle einen Token und visiere mit T einen anderen an).",
+   "selezionaToken": "Wähle zuerst einen oder mehrere Tokens.",
+   "prendiDiMira": "Visiere einen Token an (Taste T) und versuche es erneut.",
+   "selezionaMuri": "Wähle zuerst eine oder mehrere Wände (Wandebene).",
+   "nessunMuroLuminoso": "Keine der gewählten Wände leuchtet.",
+   "baglioreApplicato": "Leuchten auf {n} Wände angewendet.",
+   "presetAggiunto": "Hinzugefügt: {nome}.",
+   "atmosferaApplicata": "Filmische Atmosphäre angewendet.",
+   "atmosferaRipristinata": "Vorherige Atmosphäre wiederhergestellt.",
+   "nienteDaRipristinare": "Es gibt keine vorherige Atmosphäre zum Wiederherstellen.",
+   "effettiCopiati": "{n} Effekte nach «{scena}» kopiert."
+  },
+  "Impostazioni": {
+   "lingua": {
+    "nome": "Sprache von Super FX",
+    "hint": "Sprache der Texte von Super FX. «Automatisch» folgt der Sprache von Foundry.",
+    "auto": "Automatisch"
+   },
+   "attivo": {
+    "nome": "Effekte anzeigen",
+    "hint": "Ausschalten, um die Effekte auf diesem Computer nicht zu sehen (die anderen sehen sie trotzdem)."
+   },
+   "qualita": {
+    "nome": "Effektqualität",
+    "hint": "Wie viele Partikel gezeichnet werden. Senke sie, wenn dein Computer langsamer wird.",
+    "alta": "Hoch",
+    "media": "Mittel",
+    "bassa": "Niedrig"
+   },
+   "maniglie": {
+    "nome": "Griffe auf der Karte",
+    "hint": "Nur für die SL: zeigt die Griffe der Strahlenpunkte und Windhosen."
+   },
+   "tastoPannello": {
+    "nome": "Super-FX-Panel öffnen",
+    "hint": "Öffnet das Effekt-Panel (nur SL)."
+   },
+   "tastoAccendi": {
+    "nome": "Effekte ein / aus",
+    "hint": "Nur auf diesem Computer."
+   }
+  }
+ }
+}

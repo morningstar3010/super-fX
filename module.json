@@ -1,0 +1,40 @@
+{
+  "id": "super-fx",
+  "title": "Super FX",
+  "description": "<p>Effetti animati per le scene, regolati da un pannello di controllo per il master, senza macro: <strong>nebbia</strong> (5 intensità), <strong>pioggia</strong> e <strong>neve</strong> (da leggere a tormenta e bufera, con l'inclinazione da scegliere, anche dritta vista dall'alto), grandine, tempesta di sabbia, foglie al vento, braci, lucciole, oscurità magica, <strong>liquidi in movimento</strong> (acqua, palude, sangue, lava, acido, magia), <strong>trombe d'aria e d'acqua</strong> (5 intensità), fulmini con il tuono, <strong>raggi che si scontrano</strong> fra token o punti liberi (si allungano o si interrompono quando le fonti si spostano) e <strong>muri che emettono bagliori</strong>. Colori a scelta per tutto. Ogni effetto copre la scena intera o delle Regioni; le Regioni «Senza effetti» li tolgono da interni e grotte, anche create in automatico dai muri. English, Italiano, Deutsch, Español.</p>",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "MorningStar"
+    }
+  ],
+  "url": "https://github.com/morningstar3010/super-fx/",
+  "manifest": "https://github.com/morningstar3010/super-fx/releases/latest/download/module.json",
+  "download": "https://github.com/morningstar3010/super-fx/releases/download/1.0.0/super-fx.zip",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14"
+  },
+  "documentTypes": {
+    "RegionBehavior": {
+      "senzaEffetti": {}
+    }
+  },
+  "esmodules": [
+    "scripts/main.mjs"
+  ],
+  "styles": [
+    "styles/super-fx.css"
+  ],
+  "languages": [
+    { "lang": "en", "name": "English", "path": "lang/en.json" },
+    { "lang": "it", "name": "Italiano", "path": "lang/it.json" },
+    { "lang": "de", "name": "Deutsch", "path": "lang/de.json" },
+    { "lang": "es", "name": "Español", "path": "lang/es.json" }
+  ],
+  "socket": true,
+  "media": [
+    { "type": "cover", "url": "modules/super-fx/assets/logo.webp" },
+    { "type": "icon", "url": "modules/super-fx/assets/logo-256.webp" }
+  ]
+}

@@ -1,0 +1,371 @@
+{
+ "TYPES": {
+  "RegionBehavior": {
+   "super-fx.senzaEffetti": "Super FX – Sin efectos"
+  },
+  "HINTS": {
+   "RegionBehavior": {
+    "super-fx.senzaEffetti": "Dentro de esta región no se ven los efectos de Super FX (todos, o solo los elegidos). Perfecta para interiores, cuevas, tiendas y tejados."
+   }
+  }
+ },
+ "SUPERFX": {
+  "Comune": {
+   "si": "Sí",
+   "no": "No"
+  },
+  "Esclusione": {
+   "FIELDS": {
+    "tipi": {
+     "label": "Efectos que quitar",
+     "hint": "Elige qué efectos no se ven dentro de esta región. Si no eliges ninguno, desaparecen todos."
+    }
+   }
+  },
+  "Tipi": {
+   "nebbia": "Niebla",
+   "pioggia": "Lluvia",
+   "neve": "Nieve",
+   "grandine": "Granizo",
+   "sabbia": "Tormenta de arena",
+   "foglie": "Hojas al viento",
+   "braci": "Brasas",
+   "lucciole": "Luciérnagas",
+   "liquido": "Líquido en movimiento",
+   "tromba": "Tornado / tromba marina",
+   "fulmini": "Rayos",
+   "oscurita": "Oscuridad mágica"
+  },
+  "Descrizioni": {
+   "nebbia": "Niebla que avanza y se deshilacha, de la bruma al muro de niebla.",
+   "pioggia": "De la llovizna a la tormenta, con salpicaduras y relámpagos; también vista desde arriba.",
+   "neve": "Copos que bailan en el viento, hasta la ventisca.",
+   "grandine": "Granizo que cae rápido y rebota.",
+   "sabbia": "Granos empujados por el viento con un velo de polvo.",
+   "foglie": "Hojas que revolotean girando sobre sí mismas.",
+   "braci": "Chispas y ceniza ardiente que suben: incendios, forjas, volcanes.",
+   "lucciole": "Luces que vagan y laten: pantanos, bosques feéricos, espíritus.",
+   "liquido": "Ríos, arroyos, sangre, lava, ácido o energía mágica que fluyen.",
+   "tromba": "Vórtice visto desde arriba: aire, agua, fuego o magia. Se mueve arrastrándolo.",
+   "fulmini": "Relámpagos y rayos al azar, iguales para todos, con el trueno.",
+   "oscurita": "Un velo de sombra que respira con tentáculos oscuros que se retuercen."
+  },
+  "Livelli": {
+   "generico": {
+    "1": "Leve",
+    "2": "Moderada",
+    "3": "Media",
+    "4": "Fuerte",
+    "5": "Extrema"
+   },
+   "pioggia": {
+    "1": "Llovizna",
+    "2": "Lluvia ligera",
+    "3": "Lluvia",
+    "4": "Aguacero",
+    "5": "Tormenta"
+   },
+   "neve": {
+    "1": "Algunos copos",
+    "2": "Nevada ligera",
+    "3": "Nevada",
+    "4": "Nevada intensa",
+    "5": "Ventisca"
+   },
+   "nebbia": {
+    "1": "Bruma",
+    "2": "Niebla ligera",
+    "3": "Niebla",
+    "4": "Niebla espesa",
+    "5": "Muro de niebla"
+   },
+   "vento": {
+    "1": "Brisa",
+    "2": "Viento",
+    "3": "Viento fuerte",
+    "4": "Vendaval",
+    "5": "Temporal"
+   },
+   "tromba": {
+    "1": "Remolino",
+    "2": "Tornado pequeño",
+    "3": "Tornado",
+    "4": "Gran tornado",
+    "5": "Huracán"
+   }
+  },
+  "Liquidi": {
+   "acqua": "Agua",
+   "palude": "Pantano",
+   "sangue": "Sangre",
+   "lava": "Lava",
+   "acido": "Ácido",
+   "magia": "Energía mágica"
+  },
+  "Specie": {
+   "aria": "De aire (polvo y escombros)",
+   "acqua": "De agua (rocío)",
+   "fuoco": "De fuego",
+   "magia": "Mágica"
+  },
+  "Campi": {
+   "nome": {
+    "nome": "Nombre",
+    "hint": "Nombre del efecto en el panel. Si lo dejas vacío se usa el tipo."
+   },
+   "colore": {
+    "nome": "Color",
+    "hint": "Color del efecto."
+   },
+   "intensita": {
+    "nome": "Intensidad",
+    "hint": "De 1 (leve) a 5 (extrema): densidad, cantidad y fuerza del efecto."
+   },
+   "direzione": {
+    "nome": "Dirección",
+    "hint": "Hacia dónde va el viento o la corriente: 0° = derecha, 90° = abajo, 180° = izquierda, 270° = arriba."
+   },
+   "inclinazione": {
+    "nome": "Inclinación",
+    "hint": "Cuánto dobla el viento la caída. «Recta desde arriba» = cae hacia el suelo vista desde encima, salpicando donde toca tierra.",
+    "dallAlto": "Recta desde arriba"
+   },
+   "velocita": {
+    "nome": "Velocidad",
+    "hint": "De 1 (lenta) a 5 (rapidísima)."
+   },
+   "scala": {
+    "nome": "Tamaño",
+    "hint": "Tamaño de los bancos de niebla o de las ondas de la corriente."
+   },
+   "frequenza": {
+    "nome": "Frecuencia",
+    "hint": "Con qué frecuencia caen los rayos: de 1 (raros) a 5 (continuos)."
+   },
+   "vaga": {
+    "nome": "Movimiento",
+    "hint": "0 = se queda en el punto elegido; de 1 a 5 recorre el área sola, cada vez más rápido.",
+    "ferma": "Quieta"
+   },
+   "schizzi": {
+    "nome": "Salpicaduras",
+    "hint": "Anillos de agua o rebotes donde las gotas tocan el suelo."
+   },
+   "lampi": {
+    "nome": "Relámpagos",
+    "hint": "Durante la lluvia también caen rayos (más a menudo con más intensidad)."
+   },
+   "sottoToken": {
+    "nome": "Bajo los tokens",
+    "hint": "El líquido se ve sobre el mapa pero bajo los tokens: quien vadea sigue visible."
+   },
+   "liquido": {
+    "nome": "Líquido",
+    "hint": "Tipo de líquido: fija el color y el aspecto. La lava, el ácido y la magia brillan y burbujean."
+   },
+   "specie": {
+    "nome": "Tipo de tornado",
+    "hint": "De aire, de agua, de fuego o mágico: fija el color y los escombros."
+   },
+   "suono": {
+    "nome": "Sonido del trueno",
+    "hint": "Archivo de audio que suena para todos poco después de cada relámpago (vacío = sin sonido)."
+   },
+   "punto": {
+    "nome": "Centro",
+    "hint": "Pulsa el botón y luego el mapa; o arrastra su asa."
+   },
+   "area": {
+    "nome": "Área",
+    "hint": "Dónde se ve el efecto: toda la escena o dentro de las Regiones marcadas. Las regiones «Sin efectos» lo quitan de todos modos.",
+    "scena": "Toda la escena",
+    "nessuna": "No hay regiones en la escena: dibuja una con las herramientas de Regiones para limitar el efecto."
+   },
+   "sfumatura": {
+    "nome": "Borde suave",
+    "hint": "Lo suave que es el borde del área y de las zonas sin efectos, en casillas."
+   },
+   "soloMaster": {
+    "nome": "Solo para el DJ",
+    "hint": "Solo lo ves tú: útil para prepararlo antes de mostrarlo a los jugadores."
+   },
+   "larghezza": {
+    "nome": "Anchura",
+    "hint": "Grosor de los rayos, en casillas."
+   },
+   "scintille": {
+    "nome": "Chispas",
+    "hint": "Cuántas chispas saltan del choque y de los impactos (0 = ninguna)."
+   },
+   "alMuro": {
+    "nome": "Contra los muros",
+    "hint": "Si hay un muro entre la fuente y el destino, el rayo se detiene allí o lo atraviesa.",
+    "ferma": "Se detiene",
+    "attraversa": "Atraviesa"
+   },
+   "lunghezzaMax": {
+    "nome": "Longitud máxima",
+    "hint": "0 = cuando una fuente se aleja el rayo siempre se alarga. Un número = más allá de esas casillas el rayo se corta y vuelve cuando las fuentes se acercan.",
+    "caselle": "casillas: más allá se corta",
+    "sempre": "siempre se alarga"
+   },
+   "pulsazione": {
+    "nome": "Pulsación",
+    "hint": "0 = luz fija; de 1 a 5 el resplandor respira cada vez más rápido.",
+    "ferma": "Fija"
+   },
+   "larghezzaBagliore": {
+    "nome": "Anchura",
+    "hint": "Cuánto se extiende el resplandor alrededor del muro, en casillas."
+   },
+   "faville": {
+    "nome": "Chispas",
+    "hint": "Chispas que se desprenden de la pared."
+   }
+  },
+  "Schede": {
+   "effetti": "Efectos",
+   "raggi": "Rayos",
+   "muri": "Muros luminosos",
+   "strumenti": "Herramientas"
+  },
+  "Pannello": {
+   "titolo": "Super FX",
+   "pulsante": "Super FX – Panel de efectos",
+   "nessunaScena": "No hay ninguna escena abierta.",
+   "aggiungi": "Añadir un efecto",
+   "effettiScena": "Efectos de esta escena",
+   "nessunEffetto": "No hay efectos. Pulsa un botón de arriba para añadir uno: aparece enseguida en el mapa.",
+   "tuttiAccesi": "Encender todos",
+   "tuttiSpenti": "Apagar todos",
+   "accendi": "Encender",
+   "spegni": "Apagar",
+   "su": "Subir",
+   "giu": "Bajar",
+   "duplica": "Duplicar",
+   "elimina": "Eliminar",
+   "scegliPunto": "Elegir en el mapa",
+   "lampoOra": "Rayo ahora",
+   "sfoglia": "Explorar archivos"
+  },
+  "Raggi": {
+   "spiega": "Selecciona dos o más tokens y pulsa «Choque entre los tokens seleccionados», o crea un grupo y añade tokens o puntos libres. Sin objetivo los rayos chocan entre sí; con un objetivo lo golpean. Cuando un token o un asa se mueven, los rayos se alargan o se cortan al instante.",
+   "scontroSelezionati": "Choque entre los tokens seleccionados",
+   "nuovo": "Nuevo grupo de rayos",
+   "nessuno": "No hay grupos de rayos en esta escena.",
+   "gruppo": "Rayos",
+   "fonti": "Fuentes",
+   "nessunaFonte": "Sin fuentes: añade tokens o puntos.",
+   "aggiungiToken": "Añadir los tokens seleccionados",
+   "aggiungiPunto": "Añadir un punto",
+   "bersaglio": "Objetivo",
+   "nessunBersaglio": "ninguno: los rayos chocan",
+   "bersaglioToken": "Token apuntado",
+   "bersaglioPunto": "Punto en el mapa",
+   "bersaglioNessuno": "Ninguno (choque)",
+   "punto": "Punto",
+   "tokenSparito": "el token ya no está en la escena"
+  },
+  "Muri": {
+   "spiega": "Elige el aspecto del resplandor, luego selecciona los muros en la capa de Muros (Mayús + clic para elegir varios) y pulsa «Aplicar».",
+   "stato": "Muros luminosos en la escena: {luminosi}. Muros seleccionados: {sel}.",
+   "applica": "Aplicar a los muros seleccionados",
+   "togli": "Quitar de los seleccionados",
+   "leggi": "Copiar del muro seleccionado",
+   "seleziona": "Seleccionar los muros luminosos",
+   "togliTutti": "Quitar todos los resplandores"
+  },
+  "Strumenti": {
+   "zone": "Zonas sin efectos",
+   "zoneSpiega": "Los efectos se quitan con las Regiones que tienen el comportamiento «Super FX – Sin efectos». «Máscara desde los muros» encuentra sola las habitaciones, edificios y cuevas cerrados por muros y crea la región «Super FX – Interiores». También puedes dibujar tú las regiones y añadir el comportamiento a las seleccionadas.",
+   "mascheraMuri": "Máscara desde los muros",
+   "esclusione": "«Sin efectos» en las regiones seleccionadas",
+   "nomeInterni": "Super FX – Interiores",
+   "maniglie": "Asas en el mapa",
+   "maniglieSpiega": "Los puntos libres de los rayos y el centro de los tornados tienen un asa redonda que solo ves tú: arrástrala para moverlos (Mayús = al centro de la casilla).",
+   "mostraManiglie": "Mostrar las asas",
+   "nascondiManiglie": "Ocultar las asas",
+   "preset": "Combinaciones listas",
+   "presetSpiega": "Añaden a la escena varios efectos ya ajustados juntos. Después los cambias como quieras.",
+   "atmosfera": "Atmósfera cinematográfica",
+   "atmosferaSpiega": "Colores algo apagados, sombras más profundas y una oscuridad fría, con el ciclo día/noche activo. «Restaurar» devuelve los valores anteriores.",
+   "applicaAtmosfera": "Aplicar a la escena",
+   "ripristina": "Restaurar",
+   "copia": "Copiar los efectos a otra escena",
+   "copiaPulsante": "Copiar",
+   "svuota": "Vaciar esta escena",
+   "svuotaPulsante": "Quitar efectos y rayos"
+  },
+  "Preset": {
+   "temporale": "Tormenta eléctrica",
+   "pioggia": "Lluvia",
+   "dallAlto": "Lluvia desde arriba",
+   "nevicata": "Nevada",
+   "bufera": "Ventisca",
+   "grandinata": "Granizada",
+   "sabbia": "Tormenta de arena",
+   "palude": "Pantano brumoso",
+   "autunno": "Bosque otoñal",
+   "incendio": "Incendio",
+   "cripta": "Cripta maldita",
+   "magia": "Tormenta arcana",
+   "vulcano": "Volcán"
+  },
+  "Domande": {
+   "eliminaEffetto": "¿Eliminar el efecto «{nome}»?",
+   "eliminaGruppo": "¿Eliminar el grupo de rayos «{nome}»?",
+   "togliBagliori": "¿Quitar el resplandor de {n} muros?",
+   "svuota": "¿Quitar todos los efectos y todos los rayos de la escena «{nome}»? Los muros luminosos se quedan."
+  },
+  "Avvisi": {
+   "soloMaster": "Solo el DJ puede usar el panel de Super FX.",
+   "cliccaMappa": "Haz clic en el mapa para elegir el punto (Esc o clic derecho para cancelar).",
+   "scenaTroppoGrande": "La escena es demasiado grande para la máscara automática: dibuja las regiones a mano.",
+   "nessunInterno": "No he encontrado espacios cerrados por muros en esta escena.",
+   "selezionaRegioni": "Selecciona primero una o más regiones (capa de Regiones).",
+   "esclusioniAggiunte": "Comportamiento «Sin efectos» añadido a {n} regiones.",
+   "liquidoArea": "Consejo: dibuja una Región a lo largo del río, selecciónala y añade el líquido; o elige el área en el recuadro del efecto.",
+   "dueToken": "Selecciona al menos dos tokens (o selecciona un token y apunta a otro con T).",
+   "selezionaToken": "Selecciona primero uno o más tokens.",
+   "prendiDiMira": "Apunta a un token (tecla T) y vuelve a intentarlo.",
+   "selezionaMuri": "Selecciona primero uno o más muros (capa de Muros).",
+   "nessunMuroLuminoso": "Ninguno de los muros seleccionados tiene resplandor.",
+   "baglioreApplicato": "Resplandor aplicado a {n} muros.",
+   "presetAggiunto": "Añadido: {nome}.",
+   "atmosferaApplicata": "Atmósfera cinematográfica aplicada.",
+   "atmosferaRipristinata": "Atmósfera anterior restaurada.",
+   "nienteDaRipristinare": "No hay una atmósfera anterior que restaurar.",
+   "effettiCopiati": "{n} efectos copiados a «{scena}»."
+  },
+  "Impostazioni": {
+   "lingua": {
+    "nome": "Idioma de Super FX",
+    "hint": "Idioma de los textos de Super FX. «Automático» sigue el idioma de Foundry.",
+    "auto": "Automático"
+   },
+   "attivo": {
+    "nome": "Mostrar los efectos",
+    "hint": "Desactívalo para no ver los efectos en este ordenador (los demás los siguen viendo)."
+   },
+   "qualita": {
+    "nome": "Calidad de los efectos",
+    "hint": "Cuántas partículas dibujar. Bájala si el ordenador va lento.",
+    "alta": "Alta",
+    "media": "Media",
+    "bassa": "Baja"
+   },
+   "maniglie": {
+    "nome": "Asas en el mapa",
+    "hint": "Solo para el DJ: muestra las asas de los puntos de los rayos y de los tornados."
+   },
+   "tastoPannello": {
+    "nome": "Abrir el panel de Super FX",
+    "hint": "Abre el panel de efectos (solo DJ)."
+   },
+   "tastoAccendi": {
+    "nome": "Encender / apagar los efectos",
+    "hint": "Solo en este ordenador."
+   }
+  }
+ }
+}
